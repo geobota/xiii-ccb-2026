@@ -1,0 +1,78 @@
+project:
+  type: website
+
+lang: es
+date-format: iso
+
+lightbox: true
+
+csl: apa.csl
+
+execute:
+    freeze: auto
+
+website:
+  title: "GEOBOTA en el XIII Congreso Colombiano de Botánica"
+  description: "El Grupo de Estudios Botánicos GEOBOTA en el XIII Congreso Colombiano de Botánica"
+  site-url: https://geobota.github.io/xiii-ccb-2026
+  repo-url: https://github.com/geobota/xiii-ccb-2026
+
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+
+  google-analytics:
+    tracking-id: "G-LKGW209QWV"
+    anonymize-ip: true
+
+  twitter-card:
+    card-style: summary_large_image
+
+  open-graph: true
+
+  navbar:
+    logo: images/placeholder.png
+    right:
+      - text: Inicio
+        href: index.qmd
+      - text: "Cursos"
+        # menu:
+        #   - text: "Etnobotánica Cuantitativa en R"
+        #     href: https://geobota.github.io/xii-ccb-etnobotanica/
+        #   - text: "Introducción a la Aerobiología"
+        #     href: https://geobota.github.io/xii-ccb-aerobiologia/
+        #   - text: "Investigación Reproducible con Quarto"
+        #     href: https://geobota.github.io/xii-ccb-quarto/
+      - text: "Simposios"
+        href: index.qmd/#sec-simposios
+      - text: "Ponencias"
+        href: index.qmd#sec-presentations
+      - text: "Pósters"
+        href: index.qmd#sec-posters
+      - text: "XIII CCB"
+        href: https://acb.org.co/xiiiccb2026/
+      - text: "ACB"
+        href: https://acb.org.co/
+      - text: "GEOBOTA"
+        href: http://geobota.github.io/
+      - icon: facebook
+        href: https://www.facebook.com/geobotaudea/
+      - icon: instagram
+        href: https://www.instagram.com/geobotaudea/
+      - icon: github
+        href: https://github.com/geobota/xiiiccb2026/
+
+  page-footer:
+    center: Made by [\@alexespinosaco](https://alexespinosaco.github.io) with [![](https://www.r-project.org/logo/Rlogo.svg){fig-alt="R" width=21px}](https://www.r-project.org/) and [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: solar
+    respect-user-color-scheme: true
+    css: styles.scss
+    toc: true
+
+resources:
+  - images/placeholder.png
